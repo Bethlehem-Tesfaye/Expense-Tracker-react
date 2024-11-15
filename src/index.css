@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 45%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin: 40px auto;
+  overflow-y: scroll; 
+  padding-right: 15px;
+}
+.container::-webkit-scrollbar{
+  width: 12px; 
+}
+.container::-webkit-scrollbar-track {
+  background: #f1e5e5;
+  border-radius: 6px; 
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(203, 169, 225);    
+  border-radius: 10px; 
+  border: 2px solid #f1f1f1; 
+   
+}
+.container::-webkit-scrollbar-thumb:hover {
+  background: #c478f2;  
+}
+.header-cont {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.balance-cont{
+  margin-bottom: 20px;
+}
+.income-cont{
+  display: flex;
+  border: 2px solid rgb(191, 185, 185);
+  box-shadow: 2px 2px 2px rgb(105, 102, 102); 
+  padding: 20px;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.income-cont .vertical{
+  width: 1px;
+  background-color: black;
+  height: 50px;
+}
+.income h2{
+  color: green;
+}
+.expense h2{
+  color: red;
+}
+.add-cont{ 
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.add{
+  width: 100%;
+  background-color: rgb(167, 136, 229);
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+.add-cont input{
+  padding: 5px;
+}
+.history-cont .list{
+  display: flex; 
+  gap: 10px;
+  justify-content: center;
+  align-items:baseline;
+  justify-items: center;
+
+}
+.history-cont .del-btn{
+  visibility: hidden;
+}
+.history-cont .list:hover .del-btn{
+  visibility: visible;
+}
+.history-cont .list ul{
+  width: 100%;
+}
+.history-cont .list ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(165, 123, 213);
+  border-radius: 5px;
+  padding: 5px 20px 5px 5px ;
+  margin-bottom: 10px;
+  width: 100%;
+
+}
+.history-cont .list ul li .right-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.colorMacth {
+  width: 5px; /* Adjust this width for desired thickness */
+  height: 100%; /* Ensures it takes the full height of the list item */
+  border-radius: 5px;
+  display: inline-block; /* Ensures it displays even when empty */
+}
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
+}
+  
+
